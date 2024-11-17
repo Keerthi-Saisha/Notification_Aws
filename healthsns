@@ -74,7 +74,8 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: !Ref InstanceType
-      ImageId: "ami-0c55b159cbfafe1f0"  # Example AMI ID (Amazon Linux 2)
+     # ImageId: "ami-0c55b159cbfafe1f0"  # Example AMI ID (Amazon Linux 2)
+       ImageID: "ami-0bdb828fd58c52235"
       SubnetId: !Ref MySubnet
       SecurityGroupIds:
         - !Ref MySecurityGroup
